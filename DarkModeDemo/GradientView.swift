@@ -27,4 +27,20 @@ class GradientView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // ---------------------------------
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if #available(iOS 13, *) {
+            if self.traitCollection.userInterfaceStyle != previousTraitCollection?.userInterfaceStyle {
+                self.gradientLayer.colors = UIColor.myGradient.cgColors  // notice - not needed to specify self.traitCollection!!!
+                
+                // Where current userInterfaceStyle is set?
+                //
+                // UIView: draw(), layoutSubviews(), traitCollectionDidChange(), tintColorDidChange()
+                // UIViewController: viewWillLayoutSubviews(), viewDidLayoutSubviews(), traitCollectionDidChange()
+                // UIPresentationController: containerViewWillLayoutSubviews(), containerViewDidLayoutSubviews(), containerViewWillLayoutSubviews()
+            }
+        }
+        super.traitCollectionDidChange(previousTraitCollection)
+    }
+    
 }
