@@ -12,13 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     
+    // ---------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(named: "myStandardBackground")
-        self.label.textColor = UIColor(named: "myLabelText")
-        self.label.backgroundColor = UIColor(named: "myLabelBackground")
+        self.view.backgroundColor = .myStandardBackground
+        self.label.textColor = .myLabelText
+        self.label.backgroundColor = .myLabelBackground
         
+        let gradientView = GradientView(frame: CGRect(x: 20, y: 150, width: 280, height: 400))
+        self.view.addSubview(gradientView)
     }
 
 

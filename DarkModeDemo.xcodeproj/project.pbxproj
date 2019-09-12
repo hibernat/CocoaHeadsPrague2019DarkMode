@@ -13,6 +13,8 @@
 		A0DFA9E9232A2F93005C35BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DFA9E7232A2F93005C35BA /* Main.storyboard */; };
 		A0DFA9EB232A2F94005C35BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DFA9EA232A2F94005C35BA /* Assets.xcassets */; };
 		A0DFA9EE232A2F94005C35BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DFA9EC232A2F94005C35BA /* LaunchScreen.storyboard */; };
+		A0DFA9FC232A4458005C35BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFA9FB232A4458005C35BA /* GradientView.swift */; };
+		A0DFA9FF232A45A3005C35BA /* UIColor+demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A0DFA9EA232A2F94005C35BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0DFA9ED232A2F94005C35BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0DFA9EF232A2F94005C35BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DFA9FB232A4458005C35BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+demo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		A0DFA9E0232A2F93005C35BA /* DarkModeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A0DFA9E1232A2F93005C35BA /* AppDelegate.swift */,
-				A0DFA9E3232A2F93005C35BA /* SceneDelegate.swift */,
 				A0DFA9E5232A2F93005C35BA /* ViewController.swift */,
-				A0DFA9E7232A2F93005C35BA /* Main.storyboard */,
+				A0DFA9FB232A4458005C35BA /* GradientView.swift */,
 				A0DFA9EA232A2F94005C35BA /* Assets.xcassets */,
-				A0DFA9EC232A2F94005C35BA /* LaunchScreen.storyboard */,
+				A0DFA9FD232A450D005C35BA /* Extensions */,
+				A0DFA9FA232A43BD005C35BA /* SupportingFiles */,
 				A0DFA9EF232A2F94005C35BA /* Info.plist */,
 			);
 			path = DarkModeDemo;
+			sourceTree = "<group>";
+		};
+		A0DFA9FA232A43BD005C35BA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A0DFA9E7232A2F93005C35BA /* Main.storyboard */,
+				A0DFA9EC232A2F94005C35BA /* LaunchScreen.storyboard */,
+				A0DFA9E1232A2F93005C35BA /* AppDelegate.swift */,
+				A0DFA9E3232A2F93005C35BA /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A0DFA9FD232A450D005C35BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +162,8 @@
 			files = (
 				A0DFA9E6232A2F93005C35BA /* ViewController.swift in Sources */,
 				A0DFA9E2232A2F93005C35BA /* AppDelegate.swift in Sources */,
+				A0DFA9FC232A4458005C35BA /* GradientView.swift in Sources */,
+				A0DFA9FF232A45A3005C35BA /* UIColor+demo.swift in Sources */,
 				A0DFA9E4232A2F93005C35BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
