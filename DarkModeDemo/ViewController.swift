@@ -24,7 +24,12 @@ class ViewController: UIViewController {
         let gradientView = GradientView(frame: CGRect(x: 20, y: 400, width: 280, height: 100))
         self.view.addSubview(gradientView)
         
-        self.imageView.image = UIImage(named: "myImage")
+        if #available(iOS 12, *) {
+            // this does not work, I consider it as a bug
+            self.imageView.image = UIImage(named: "myImage")?.imageAsset?.image(with: UITraitCollection(userInterfaceStyle: .dark))
+        } else {
+             self.imageView.image = UIImage(named: "myImage")
+        }
     }
 
 
