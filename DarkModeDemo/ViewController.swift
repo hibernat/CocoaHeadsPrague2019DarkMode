@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        if #available(iOS 13, *) {
-            self.view.backgroundColor = .systemBackground
-            self.label.textColor = .label
-        } else {
-            self.view.backgroundColor = .white
-            self.label.textColor = .purple
-        }
+        
+        self.view.backgroundColor = UIColor(named: "myStandardBackground")
+        self.label.textColor = UIColor(named: "myLabelText")
+        self.label.backgroundColor = UIColor(named: "myLabelBackground")
+        
     }
 
 
