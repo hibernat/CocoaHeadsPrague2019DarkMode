@@ -15,6 +15,7 @@
 		A0DFA9EE232A2F94005C35BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DFA9EC232A2F94005C35BA /* LaunchScreen.storyboard */; };
 		A0DFA9FC232A4458005C35BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFA9FB232A4458005C35BA /* GradientView.swift */; };
 		A0DFA9FF232A45A3005C35BA /* UIColor+demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */; };
+		A0DFAA03232A54C2005C35BA /* Array+demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DFAA02232A54C2005C35BA /* Array+demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A0DFA9EF232A2F94005C35BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DFA9FB232A4458005C35BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+demo.swift"; sourceTree = "<group>"; };
+		A0DFAA02232A54C2005C35BA /* Array+demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+demo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				A0DFA9FE232A45A3005C35BA /* UIColor+demo.swift */,
+				A0DFAA02232A54C2005C35BA /* Array+demo.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				A0DFA9E6232A2F93005C35BA /* ViewController.swift in Sources */,
 				A0DFA9E2232A2F93005C35BA /* AppDelegate.swift in Sources */,
+				A0DFAA03232A54C2005C35BA /* Array+demo.swift in Sources */,
 				A0DFA9FC232A4458005C35BA /* GradientView.swift in Sources */,
 				A0DFA9FF232A45A3005C35BA /* UIColor+demo.swift in Sources */,
 				A0DFA9E4232A2F93005C35BA /* SceneDelegate.swift in Sources */,

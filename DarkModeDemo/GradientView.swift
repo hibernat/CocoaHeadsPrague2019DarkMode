@@ -19,7 +19,7 @@ class GradientView: UIView {
         self.gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
         self.gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         
-        self.gradientLayer.colors = [UIColor(named:"myGradientStart")!.cgColor, UIColor(named:"myGradientEnd")!.cgColor]
+        self.gradientLayer.colors = UIColor.myGradient.cgColors(resolvedWith: self.traitCollection)
     }
     
     // ---------------------------------
