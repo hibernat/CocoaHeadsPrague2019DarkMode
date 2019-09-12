@@ -17,7 +17,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = .myStandardBackground
-        self.label.textColor = .myLabelText
+        
+        let myRGB = MyRGB(red: 0xFF, green: 0x58, blue: 0x57)
+        self.label.textColor = UIColor(myRGB: myRGB)
+        
         self.label.backgroundColor = .myLabelBackground
         
         let gradientView = GradientView(frame: CGRect(x: 20, y: 150, width: 280, height: 400))
